@@ -2,7 +2,7 @@
 
 > A highly interactive, multi-layered, gamified authentication flow built to test the limits of modern frontend physics, UI design, and state management.
 
-**🌍 Live Demo:** [https://fun-auth-placeholder-demo.vercel.app](https://fun-auth-placeholder-demo.vercel.app)
+**🌍 Live Demo:** [[https://funAuth.com](https://fun-auth-azure.vercel.app/)]
 
 ---
 
