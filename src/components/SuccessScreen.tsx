@@ -22,7 +22,7 @@ export default function SuccessScreen({
         transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
         className="mb-6 relative"
       >
-        <h1 className="text-6xl md:text-8xl font-extrabold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 animate-gradient-x select-none">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 animate-gradient-x select-none">
           CONGRATULATIONS
         </h1>
         <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 blur-3xl opacity-20 -z-10 animate-pulse" />

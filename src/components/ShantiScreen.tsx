@@ -244,17 +244,17 @@ export default function ShantiScreen() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 1.5 }}
-      className="w-screen h-screen p-4 flex flex-col gap-4 overflow-hidden"
+      className="w-full min-h-screen md:h-screen p-4 flex flex-col gap-4 overflow-x-hidden overflow-y-auto md:overflow-hidden"
     >
       <div className="text-center pt-2 pb-4 opacity-50 font-light tracking-[0.5em] uppercase text-xs text-white">
         SHANTI MODE
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 grid-rows-2 gap-4 flex-1 pb-8 px-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 auto-rows-[350px] md:auto-rows-auto md:grid-rows-2 gap-4 flex-1 pb-8 px-4">
         <div className="col-span-1 row-span-1"><BouncingBox /></div>
         <div className="col-span-1 row-span-1"><AscendingPlates /></div>
         <div className="col-span-1 row-span-1"><SlicingBall /></div>
-        <div className="col-span-1 md:col-span-2 row-span-1"><BreathingCircle /></div>
-        <div className="col-span-1 row-span-1"><OrbitingDots /></div>
+        <div className="col-span-1 sm:col-span-2 md:col-span-2 row-span-1"><BreathingCircle /></div>
+        <div className="col-span-1 sm:col-span-2 md:col-span-1 row-span-1"><OrbitingDots /></div>
       </div>
     </motion.div>
   );
