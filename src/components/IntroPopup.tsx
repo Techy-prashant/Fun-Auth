@@ -23,7 +23,7 @@ export default function IntroPopup({ onStart }: { onStart: () => void }) {
           System Alert
         </h1>
         <p className="text-gray-400 mb-8 leading-relaxed text-sm">
-          Chhota Jarvis suspects you are a robot. I want you to complete these 5 authentications. Although this is totally unnecessary, for the sake of the game... do it!!
+          Our Chhota Jarvis suspects that you are a robot. We want you to complete these 5 authentications, Although this is totally unnecessary but for the sake of the game... do it!!
         </p>
       </motion.div>
 
