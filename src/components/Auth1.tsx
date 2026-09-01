@@ -44,7 +44,8 @@ export default function Auth1({ onSuccess }: { onSuccess: () => void }) {
           animate={{ x: position.x, y: position.y }}
           transition={{ type: "spring", stiffness: 400, damping: 15 }}
           onHoverStart={handleHover}
-          className="inline-flex items-center gap-3 p-4 bg-white/5 rounded-xl cursor-pointer hover:bg-white/10 transition-colors border border-white/10"
+          onTouchStart={handleHover}
+          className="inline-flex items-center gap-3 p-4 bg-white/5 rounded-xl cursor-pointer hover:bg-white/10 transition-colors border border-white/10 touch-none"
           onClick={handleCheck}
         >
           <div className={`w-6 h-6 rounded flex items-center justify-center transition-colors ${isChecked ? "bg-white" : "border-2 border-gray-500"}`}>

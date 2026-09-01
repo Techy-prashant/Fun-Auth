@@ -84,7 +84,7 @@ function BouncingBox() {
 
           velocity.current = { x: newVx, y: newVy };
         }}
-        className="absolute top-0 left-0 w-12 h-12 bg-blue-500/80 rounded-lg shadow-[0_0_15px_rgba(59,130,246,0.5)] cursor-grab active:cursor-grabbing"
+        className="absolute top-0 left-0 w-12 h-12 bg-blue-500/80 rounded-lg shadow-[0_0_15px_rgba(59,130,246,0.5)] cursor-grab active:cursor-grabbing touch-none"
       />
     </div>
   );
@@ -98,7 +98,7 @@ function AscendingPlates() {
         drag
         dragSnapToOrigin
         dragConstraints={containerRef}
-        className="z-10 absolute cursor-grab active:cursor-grabbing p-4"
+        className="z-10 absolute cursor-grab active:cursor-grabbing p-4 touch-none"
       >
         <motion.div
           animate={{
@@ -154,17 +154,17 @@ function SlicingBall() {
   const containerRef = useRef<HTMLDivElement>(null);
   return (
     <div ref={containerRef} className="relative w-full h-full border-2 border-white/10 rounded-xl overflow-hidden bg-black/20">
-      <motion.div drag dragConstraints={containerRef} className="absolute cursor-grab active:cursor-grabbing p-4" style={{ top: "15%", left: "5%" }}>
+      <motion.div drag dragConstraints={containerRef} className="absolute cursor-grab active:cursor-grabbing p-4 touch-none" style={{ top: "15%", left: "5%" }}>
         <div className="rotate-[15deg]">
           <SlicingBallItem delay={0} />
         </div>
       </motion.div>
-      <motion.div drag dragConstraints={containerRef} className="absolute cursor-grab active:cursor-grabbing p-4" style={{ bottom: "15%", left: "35%" }}>
+      <motion.div drag dragConstraints={containerRef} className="absolute cursor-grab active:cursor-grabbing p-4 touch-none" style={{ bottom: "15%", left: "35%" }}>
         <div className="-rotate-[30deg]">
           <SlicingBallItem delay={0.7} />
         </div>
       </motion.div>
-      <motion.div drag dragConstraints={containerRef} className="absolute cursor-grab active:cursor-grabbing p-4" style={{ top: "20%", right: "5%" }}>
+      <motion.div drag dragConstraints={containerRef} className="absolute cursor-grab active:cursor-grabbing p-4 touch-none" style={{ top: "20%", right: "5%" }}>
         <div className="rotate-[70deg]">
           <SlicingBallItem delay={1.4} />
         </div>
@@ -194,13 +194,13 @@ function BreathingCircle() {
   const containerRef = useRef<HTMLDivElement>(null);
   return (
     <div ref={containerRef} className="relative w-full h-full border-2 border-white/10 rounded-xl overflow-hidden bg-black/20 flex flex-row items-center justify-around px-8">
-      <motion.div drag dragConstraints={containerRef} className="cursor-grab active:cursor-grabbing z-10">
+      <motion.div drag dragConstraints={containerRef} className="cursor-grab active:cursor-grabbing z-10 touch-none">
         <BreathingCircleItem delay={0} />
       </motion.div>
-      <motion.div drag dragConstraints={containerRef} className="cursor-grab active:cursor-grabbing z-10">
+      <motion.div drag dragConstraints={containerRef} className="cursor-grab active:cursor-grabbing z-10 touch-none">
         <BreathingCircleItem delay={1.6} />
       </motion.div>
-      <motion.div drag dragConstraints={containerRef} className="cursor-grab active:cursor-grabbing z-10">
+      <motion.div drag dragConstraints={containerRef} className="cursor-grab active:cursor-grabbing z-10 touch-none">
         <BreathingCircleItem delay={3.2} />
       </motion.div>
     </div>
@@ -211,7 +211,7 @@ function OrbitingDots() {
   const containerRef = useRef<HTMLDivElement>(null);
   return (
     <div ref={containerRef} className="relative w-full h-full border-2 border-white/10 rounded-xl overflow-hidden bg-black/20 flex items-center justify-center">
-      <motion.div drag dragConstraints={containerRef} className="relative w-64 h-64 flex items-center justify-center cursor-grab active:cursor-grabbing z-10">
+      <motion.div drag dragConstraints={containerRef} className="relative w-64 h-64 flex items-center justify-center cursor-grab active:cursor-grabbing z-10 touch-none">
         <motion.div
           animate={{ rotate: 360, scale: [1, 1.05, 1] }}
           transition={{ rotate: { duration: 12, repeat: Infinity, ease: "linear" }, scale: { duration: 4, repeat: Infinity, ease: "easeInOut" } }}

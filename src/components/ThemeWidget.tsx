@@ -28,6 +28,7 @@ export default function ThemeWidget({ onThemeChange }: { onThemeChange: (color: 
         className="bg-black/40 backdrop-blur-xl border border-white/10 rounded-full p-2 flex items-center gap-2 shadow-[0_0_20px_rgba(0,0,0,0.5)]"
         onHoverStart={() => setIsOpen(true)}
         onHoverEnd={() => setIsOpen(false)}
+        onClick={() => setIsOpen(!isOpen)}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 1 }}

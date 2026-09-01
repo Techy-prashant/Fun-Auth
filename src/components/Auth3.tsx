@@ -74,7 +74,7 @@ export default function Auth3({ onSuccess }: { onSuccess: () => void }) {
           dragElastic={0}
           dragMomentum={false}
           onDragEnd={handleDragEnd}
-          className={`w-12 h-12 rounded-xl flex items-center justify-center cursor-grab active:cursor-grabbing shadow-lg border relative z-10 ${
+          className={`w-12 h-12 rounded-xl flex items-center justify-center cursor-grab active:cursor-grabbing touch-none shadow-lg border relative z-10 ${
             isSuccess ? "bg-green-500 border-green-400 shadow-[0_0_20px_rgba(34,197,94,0.4)]" : "bg-white border-gray-200"
           }`}
         >
