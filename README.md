@@ -23,7 +23,7 @@ Standard login screens are boring. This project turns authentication into a mise
 ## 🚀 Getting Started
 
 ### Prerequisites
-Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine..
 
 ### Installation
 
