@@ -14,7 +14,7 @@ Standard login screens are boring. This project turns authentication into a mise
 
 ## ✨ Features
 
-- **5-Step Interactive Gauntlet:** Custom-built puzzles ranging from teleporting checkboxes to reverse-typing captchas and precision dragging.
+- **10-Step Interactive Gauntlet:** Custom-built puzzles ranging from teleporting checkboxes to reverse-typing captchas, drawing perfect circles, and whack-a-mole style endless traffic light grids.
 - **True Web Physics:** Draggable, throwable elements with custom velocity decay (brakes) and origin-snapping.
 - **Shanti Mode:** A physics-based interactive zen garden to relax in after beating the gauntlet.
 - **Glassmorphism UI:** Ultra-modern dark mode aesthetics with dynamic neon background glow effects.
