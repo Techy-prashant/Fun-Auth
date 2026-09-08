@@ -57,7 +57,7 @@ export default function Auth3({ onSuccess }: { onSuccess: () => void }) {
       transition={{ type: "spring", bounce: 0.4 }}
       className="p-8 rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 w-full max-w-md text-center shadow-[0_0_40px_rgba(255,255,255,0.03)] relative overflow-hidden"
     >
-      <h2 className="text-xl text-white mb-2 tracking-wide font-semibold">Auth 3 / 5</h2>
+      <h2 className="text-xl text-white mb-2 tracking-wide font-semibold">Auth 3 / 10</h2>
       <p className="text-gray-400 text-sm mb-6">Dial it in. Drag the slider to exactly {target}.</p>
 
       <div className="mb-6">

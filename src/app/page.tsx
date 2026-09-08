@@ -8,6 +8,11 @@ import Auth2 from "@/components/Auth2";
 import Auth3 from "@/components/Auth3";
 import Auth4 from "@/components/Auth4";
 import Auth5 from "@/components/Auth5";
+import Auth6 from "@/components/Auth6";
+import Auth7 from "@/components/Auth7";
+import Auth8 from "@/components/Auth8";
+import Auth9 from "@/components/Auth9";
+import Auth10 from "@/components/Auth10";
 import SuccessScreen from "@/components/SuccessScreen";
 import ShantiScreen from "@/components/ShantiScreen";
 import ThemeWidget from "@/components/ThemeWidget";
@@ -18,7 +23,7 @@ export default function Home() {
 
   const nextStep = () => setStep((s) => s + 1);
   const restart = () => setStep(1);
-  const goZen = () => setStep(7);
+  const goZen = () => setStep(12);
 
   return (
     <main className="min-h-screen bg-[#050505] flex items-center justify-center p-4 selection:bg-white/20 overflow-hidden relative transition-colors duration-1000">
@@ -33,8 +38,13 @@ export default function Home() {
         {step === 3 && <Auth3 key="auth3" onSuccess={nextStep} />}
         {step === 4 && <Auth4 key="auth4" onSuccess={nextStep} />}
         {step === 5 && <Auth5 key="auth5" onSuccess={nextStep} />}
-        {step === 6 && <SuccessScreen key="success" onRestart={restart} onZenMode={goZen} />}
-        {step === 7 && <ShantiScreen key="shanti" />}
+        {step === 6 && <Auth6 key="auth6" onSuccess={nextStep} />}
+        {step === 7 && <Auth7 key="auth7" onSuccess={nextStep} />}
+        {step === 8 && <Auth8 key="auth8" onSuccess={nextStep} />}
+        {step === 9 && <Auth9 key="auth9" onSuccess={nextStep} />}
+        {step === 10 && <Auth10 key="auth10" onSuccess={nextStep} />}
+        {step === 11 && <SuccessScreen key="success" onRestart={restart} onZenMode={goZen} />}
+        {step === 12 && <ShantiScreen key="shanti" />}
       </AnimatePresence>
     </main>
   );

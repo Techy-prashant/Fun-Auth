@@ -36,7 +36,7 @@ export default function Auth1({ onSuccess }: { onSuccess: () => void }) {
       transition={{ type: "spring", bounce: 0.4 }}
       className="p-8 rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 w-full max-w-md text-center shadow-[0_0_40px_rgba(255,255,255,0.03)]"
     >
-      <h2 className="text-xl text-white mb-2 tracking-wide font-semibold">Auth 1 / 5</h2>
+      <h2 className="text-xl text-white mb-2 tracking-wide font-semibold">Auth 1 / 10</h2>
       <p className="text-gray-400 text-sm mb-12">Prove you have human dexterity.</p>
 
       <div className="h-64 flex items-center justify-center relative">

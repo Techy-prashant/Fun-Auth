@@ -47,7 +47,7 @@ export default function Auth2({ onSuccess }: { onSuccess: () => void }) {
       transition={{ type: "spring", bounce: 0.4 }}
       className="p-8 rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 w-full max-w-md text-center shadow-[0_0_40px_rgba(255,255,255,0.03)] relative overflow-hidden"
     >
-      <h2 className="text-xl text-white mb-2 tracking-wide font-semibold">Auth 2 / 5</h2>
+      <h2 className="text-xl text-white mb-2 tracking-wide font-semibold">Auth 2 / 10</h2>
       <p className="text-gray-400 text-sm mb-8">The Reverse Captcha. Type it perfectly backwards.</p>
 
       <div className="mb-8 p-6 rounded-xl bg-black/40 border border-white/10 select-none overflow-hidden relative">
